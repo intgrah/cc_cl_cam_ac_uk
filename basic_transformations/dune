@@ -1,3 +1,8 @@
+(env
+ (_
+  (flags
+   (:standard -w -32-37))))
+
 (executable
  (name ackermann)
  (modules ackermann))
@@ -19,3 +24,7 @@
  (modules fibonacci_machine)
  (preprocess
   (pps ppx_deriving.show)))
+
+(executable
+ (name tail)
+ (modules tail))
